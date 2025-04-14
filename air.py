@@ -71,7 +71,7 @@ canvas.pack(pady=(10, 20))
 
 # Functions to Draw and Highlight
 def draw_graph():
-    canvas.delete("all")  # Ensure fresh redraw of the graph
+    canvas.delete("all")  
     for airport, neighbors in graph.items():
         x1, y1 = airport_positions[airport]
         for neighbor, weight in neighbors.items():
